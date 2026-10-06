@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lar e Patas Pet Shop - Vitrine & Vendas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Logo Lar e Patas Pet Shop" class="logo-petshop">
+      <h1>Lar e Patas</h1>
+      <p class="subtitulo-header">PET SHOP</p>
+    </div>
+    <nav>
+      <a href="home.html" class="link-nav">🏠 Início / Capa</a>
+      <a href="index.html" class="link-nav ativo">🛒 Loja / Vendas</a>
+      <a href="admin.html" class="link-nav">📊 Painel Admin</a>
+    </nav>
+  </header>
+
+  <section class="banner-capa">
+    <div class="banner-conteudo">
+      <h2>As melhores ofertas para o seu Pet!</h2>
+      <p>Selecione os produtos abaixo para efetuar o pedido.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="secao">
+      <h2>🐶 Vitrine de Produtos</h2>
+      <div id="catalogo" class="grid-produtos"></div>
+    </section>
+
+    <section class="secao">
+      <h2>🛒 Registar Nova Venda</h2>
+      <form id="form-venda" class="form-venda">
+        <div class="campo">
+          <label for="produto-select">Selecione o Produto:</label>
+          <select id="produto-select" required></select>
+        </div>
+
+        <div class="campo">
+          <label for="quantidade-input">Quantidade:</label>
+          <input type="number" id="quantidade-input" min="1" value="1" required>
+        </div>
+
+        <button type="submit" class="btn-comprar">Finalizar Venda (Dar Baixa no Estoque)</button>
+      </form>
+      <div id="mensagem-venda" class="mensagem"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

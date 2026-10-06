@@ -1,0 +1,317 @@
+/* RESET E ESTILOS GERAIS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fffaf5;
+  color: #333333;
+}
+
+/* ==========================================
+   PÁGINA DE CAPA / BEM-VINDO (home.html)
+   ========================================== */
+.body-home {
+  background: linear-gradient(135deg, rgba(243, 107, 8, 0.9), rgba(191, 54, 12, 0.85)), 
+              url('https://images.unsplash.com/photo-1450778869186-3997d5a518d6?w=1600') center/cover no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-container {
+  width: 100%;
+  max-width: 650px;
+}
+
+.hero-card {
+  background: rgba(255, 255, 255, 0.96);
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  border: 3px solid #ffe3cd;
+}
+
+.logo-hero {
+  max-width: 180px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(243, 107, 8, 0.3);
+}
+
+.hero-card h1 {
+  color: #d85700;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-subtitulo {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.hero-destaques {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.destaque-item {
+  background: #fff3e6;
+  color: #d85700;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid #ffd8b8;
+}
+
+.hero-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-hero {
+  display: block;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-principal {
+  background-color: #f36b08;
+  color: white;
+  box-shadow: 0 6px 15px rgba(243, 107, 8, 0.4);
+}
+
+.btn-principal:hover {
+  background-color: #d85700;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(243, 107, 8, 0.6);
+}
+
+.btn-secundario {
+  background-color: #f0f0f0;
+  color: #444;
+}
+
+.btn-secundario:hover {
+  background-color: #e2e2e2;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   CABEÇALHO E NAVEGAÇÃO (index.html e admin.html)
+   ========================================== */
+header {
+  background-color: #f36b08;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-petshop {
+  max-width: 130px;
+  height: auto;
+  border-radius: 14px;
+  background-color: white;
+  padding: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.subtitulo-header {
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.link-nav {
+  color: white;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.link-nav:hover, .link-nav.ativo {
+  background-color: white;
+  color: #d85700;
+}
+
+/* BANNER DE CAPA INTERNO */
+.banner-capa {
+  background: linear-gradient(rgba(243, 107, 8, 0.75), rgba(191, 54, 12, 0.85)), 
+              url('https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=1200') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+}
+
+.banner-admin {
+  background: linear-gradient(rgba(216, 87, 0, 0.85), rgba(150, 40, 0, 0.85)), 
+              url('https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=1200') center/cover no-repeat;
+}
+
+.banner-conteudo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+/* ESTRUTURA PRINCIPAL E COMPONENTES */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 40px;
+}
+
+.secao {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  margin-bottom: 30px;
+  border-top: 5px solid #f36b08;
+}
+
+.secao h2 {
+  color: #d85700;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card-produto {
+  border: 1px solid #ffe3cd;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #fff9f4;
+}
+
+.card-produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(243, 107, 8, 0.25);
+}
+
+.card-produto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card-produto h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card-produto .preco {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #d85700;
+}
+
+.card-produto .estoque {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* FORMULÁRIO */
+.form-venda {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.campo label {
+  font-weight: bold;
+  color: #444;
+}
+
+.campo select, .campo input {
+  padding: 10px;
+  border: 1px solid #ffcc99;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-comprar {
+  background-color: #f36b08;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+  background-color: #d85700;
+}
+
+.mensagem {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.chart-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}

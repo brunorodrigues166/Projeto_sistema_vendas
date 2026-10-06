@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lar e Patas Pet Shop - Painel Admin</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Biblioteca Chart.js para o gráfico de vendas -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Logo Lar e Patas Pet Shop" class="logo-petshop">
+      <h1>Lar e Patas</h1>
+      <p class="subtitulo-header">PAINEL ADMINISTRATIVO</p>
+    </div>
+    <nav>
+      <a href="home.html" class="link-nav">🏠 Início / Capa</a>
+      <a href="index.html" class="link-nav">🛒 Loja / Vendas</a>
+      <a href="admin.html" class="link-nav ativo">📊 Painel Admin</a>
+    </nav>
+  </header>
+
+  <section class="banner-capa banner-admin">
+    <div class="banner-conteudo">
+      <h2>Gestão de Estoque e Análise de Vendas</h2>
+      <p>Acompanhe em tempo real o desempenho de vendas da Lar e Patas.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="secao">
+      <h2>📊 Relatório e Analytics de Vendas</h2>
+      <p style="margin-bottom: 20px;">Acompanhe o desempenho de vendas dos produtos em tempo real.</p>
+      <div class="chart-container">
+        <canvas id="graficoVendas"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
